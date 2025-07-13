@@ -8,10 +8,11 @@ scroll-behavior: smooth;
 }
 
 
+
 /* Home page */
 
+
 .banner{
-    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -26,8 +27,7 @@ scroll-behavior: smooth;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    pointer-events: none;
-    z-index: 0;
+    pointer-events: none;;
 }
 
 .content{
@@ -48,10 +48,11 @@ nav{
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
 }
 
-nav.logo{
+nav .logo{
     width: 60px;
+    height:8vh;
     margin:2vh;
-    margin-left: 8%;
+    margin-left: 2%;
 }
 
 
@@ -63,6 +64,150 @@ nav ul li{
 
 .navbar{
     display: flex;
-    align-items: center;
     margin-right: 4vh;
 }
+
+.navbar a{
+    color: white;
+    font-size: 19px;
+    font-weight: 550;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: ease 0,40s;
+}
+
+
+.navbar  a {
+  transition: all 0.4s ease;
+}
+
+
+.navbar  a:hover{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+}
+
+
+.navbar  a.active {
+  color: black;
+}
+
+nav  ul  li  a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+}
+
+.title{
+    text-decoration: none;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    padding:14px 17px;
+    margin-top: 34vh;
+    text-align: center;
+    vertical-align: center;
+}
+
+.title  h1 {
+font-size: 10vh;
+font-weight: 750;
+text-shadow: 2px black;
+transition: ease 0.3s;
+user-select: none;
+}
+
+.title  h1:hover {
+    color:transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+.title  p {
+    user-select: none;
+    font-size: 5vh;
+}
+
+.button {
+    margin-top: 5vh;
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(21, 74, 74);
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color:white;
+    background-color: rgb(21, 74, 74);
+    box-shadow: 5px 10px 30px rgba( 0, 0, 0, 0.4);
+}
+
+
+
+/*LOCATIONS*/
+
+
+
+.location-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-content{
+    position: relative;
+    filter:brightness(95%);
+    transition: all 0.3s cubic-bezier(0.445,0.05,0.55,0.95);
+
+}
+
+
+.col-content  img {
+margin-bottom: 40px;
+height: 500px;
+border-radius: 27px;
+width:100%;
+}
+
+
+ .location-title  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 10px;
+    padding-top: 75px;
+    line-height: 2;
+}
+
+
+.col-content  h5 {
+    font-size: 25px;
+    color:white;
+    font-weight: 500;
+    left: 20px;
+    bottom: 105px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.col-content  p{
+    position: absolute;
+    font-size:20px;
+    color: white;
+    left: 20px;
+    bottom: 80px;
+    cursor: pointer;
+
+}
+
+.col-content:hover{
+    filter: brightness(120%);
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
