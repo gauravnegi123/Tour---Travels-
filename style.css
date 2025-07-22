@@ -616,3 +616,54 @@ padding: 110px 30%;
     transform: scale(1.1);
 
 }
+
+
+
+
+
+/*Book Cab Section*/
+
+
+
+
+
+
+.bookcab{
+    position: relative;
+
+}
+.bookcab-content {
+    padding: 110px 30%;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+
+.bookcab-content  h1{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    position: relative;
+}
+
+.bookcab-content  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+
+}
+
+.bookcab-content  form input{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    background-color:#dddddd;
+    font-size: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
