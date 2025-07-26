@@ -621,6 +621,19 @@ padding: 110px 30%;
 
 
 
+
+
+.section-content{
+    padding-left:200px;
+    padding-right: 200px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+
+
+
+
 /*Book Cab Section*/
 
 
@@ -666,7 +679,6 @@ padding: 110px 30%;
     text-align: center;
     font-size: 40px;
     color: black;
-    position: relative;
 }
 
 .bookcab-content  form {
@@ -678,13 +690,15 @@ padding: 110px 30%;
 
 }
 
+
 .bookcab-content  form input{
     width: 100%;
     padding: 17px;
     border: none;
     outline: none;
     background-color:#dddddd;
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
