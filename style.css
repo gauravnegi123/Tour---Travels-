@@ -11,6 +11,20 @@ html{
     scroll-behavior: smooth;
 }
 
+
+.back-to-top {
+    color : black;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    padding:0.5%;
+}
+
+.back-to-top:hover {
+    color: red;
+    padding: 0.5%;
+    transition: all 0.3s ease;
+}
 /* Home page */
 
 
@@ -527,6 +541,10 @@ padding: 110px 30%;
     margin-top: 20px;
     color: #fc0050;
 }
+.gender{
+    display: flex;
+    align-items: center;
+}
 
 .date-time{ 
     display: flex;
@@ -656,14 +674,13 @@ padding: 110px 30%;
 
 
 .bookcab-content {
-    padding-top: 4%;
+    padding-top: 9%;
     padding-left: 4%;
     padding-right:6%;
     height: 100%;
     min-height: 100vh;
     width: 50%;
     justify-content: center;
-    margin-top: 5%;
    
 }
 
