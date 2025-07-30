@@ -35,7 +35,7 @@
 
                 <h1>Register <span>Here</span></h1>
 
-                <form action="" onsubmit="return validateform()">
+                <form action="#submitted" onsubmit="return validateform()">
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     <input type="email" name="myemail" placeholder="Email-Id" id="" required>
                     <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
@@ -68,6 +68,7 @@
 
 
                 </form>
+                <div id="submitted" class="success">Form Submitted Successfully</div>
 
 
             </div>
