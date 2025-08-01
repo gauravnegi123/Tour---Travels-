@@ -889,3 +889,53 @@ padding: 110px 30%;
     object-fit: cover;
     border-radius: 10px;
 }
+
+
+
+
+/*About us*/
+
+
+
+
+
+.about{
+    background-color: #191919;
+    width: 100%;
+    padding: 78px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main img{
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+    margin-top: 10%;
+    user-select: none;
+
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
