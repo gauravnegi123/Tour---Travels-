@@ -581,6 +581,8 @@ padding: 110px 30%;
 
 /* Contact Us */
 
+
+
 .contactbody{
     background-color: #101010;
     background-repeat: no-repeat;
@@ -649,6 +651,8 @@ padding: 110px 30%;
 
 
 /*Book Cab Section*/
+
+
 
 .cabbooking{
        background-color:rgba(0, 0, 0, 0);
@@ -723,8 +727,7 @@ padding: 110px 30%;
 }
 
 
-.bookcab-content  a.btn{
-    display:inline-block;
+.bookcab-content  form button{
     color: white;
     background-color: black;
     font-size: 18px;
@@ -733,13 +736,13 @@ padding: 110px 30%;
     border-radius: 40px;
     width: 140px;
     cursor: pointer;
-    margin-left: 28px;
+    user-select: none;
     text-align: center;
     margin-top:10px ;
     
 }
 
-.bookcab-content  a.btn:hover{
+.bookcab-content form button:hover{
     transform: scale(1.05);
     transition: ease 0.4s;
 }
@@ -908,14 +911,14 @@ padding: 110px 30%;
 }
 
 .main img{
-    margin-top: 50px;
+    margin-top:20%;
     height: 400px;
     width: 400px;
 }
 
 .abt-text{
     width: 500px;
-    margin-top: 10%;
+    margin-top: 2%;
     user-select: none;
 
 }
@@ -934,7 +937,7 @@ padding: 110px 30%;
 
 .abt-text p{
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 45px;
     line-height: 30px;
     letter-spacing: 1px;

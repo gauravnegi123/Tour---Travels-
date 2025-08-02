@@ -7,6 +7,7 @@
     <title>Tour & Travels</title>
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
@@ -44,12 +45,13 @@
             <div class="bookcab-content">
                 <h1>Book Your Cab </h1>
 
-                <form action="" onsubmit="return validateform()">
+                <form id="cab-form" action="" onsubmit="return validateform()">
                     <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
                     <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
                     <input type="datetime-local" placeholder="Enter Date and Time">
+                    <button type="submit" class="btn">See Price</button>
                 </form>
-                <a href="price.html" class="btn"> See Price</a>
+                <h3 id="price"></h3>
             </div>
                 <div class="img-sec">
                 <img src="images/{677AB3ED-6B05-476A-B50F-DD150B1A6531}.png" alt="image">
