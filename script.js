@@ -14,3 +14,6 @@ document.getElementById('cab-form').addEventListener('submit', function(event) {
     // Display result
     document.getElementById('price').textContent = "Estimated Fare: ₹" + totalfare;
 });
+
+
+
