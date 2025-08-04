@@ -31,8 +31,8 @@ function getDistance() {
             const element = response.rows[0].elements[0];
 
             if (element.status === 'OK') {
-                const distanceText = element.distance.text;  // e.g., "12.3 km"
-                const timeText = element.duration.text;      // e.g., "25 mins"
+                const distanceText = element.distance.text;  
+                const timeText = element.duration.text;      
 
                 const distanceKm = parseFloat(distanceText.replace(' km', '').replace(',', ''));
                 const timeMin = parseFloat(timeText.replace(' mins', '').replace(' min', ''));
