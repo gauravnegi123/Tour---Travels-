@@ -87,15 +87,6 @@ nav  ul li i {
     font-size: 18px;
 }
 
-.a{
-    display: flex;
-}
-.a:hover {
-      color: black;
-      background: white;
-        
-}
-
 .navbar{
     display: flex;
     margin-right: 4vh;
