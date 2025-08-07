@@ -1015,7 +1015,7 @@ padding: 110px 30%;
 input {
     width: 100%;
     padding: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
@@ -1068,10 +1068,61 @@ button.continue:hover {
 
 button.continue:active {
   background-color:#d6b738; 
-  transform: scale(0.98);   
+  transform: scale(0.99);   
 }
 
 .divider {
-    text-align: center;
-    
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+    color:#888;
+}
+
+.divider::before,.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider span{
+    color: black;
+    font-size: 13px;
+}
+
+.google-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px transparent;
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.google-btn img {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.google-btn:hover {
+    border:  0.5px solid blue;
+}
+.google-btn:active {
+    transform: scale(0.99);
+    background-color: #e0e0e0;
+}
+
+.forgot-password{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color:deepskyblue;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
