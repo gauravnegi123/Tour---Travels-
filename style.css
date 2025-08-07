@@ -949,3 +949,76 @@ padding: 110px 30%;
     line-height: 30px;
     letter-spacing: 1px;
 }
+
+
+
+
+/*Sign in   Tab*/
+
+
+
+
+.popup {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    width: 350px;
+    border-radius: 8px;
+    padding: 25px;
+
+}
+
+.close{
+    position:absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 15px;
+    left:95%;
+    font-size: 25px;    
+
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+   
+}
+
+.tabs button{
+    background: none;
+    border: none;
+    padding-bottom:4%;
+    padding-right: 11%;
+    padding-left: 11%;
+    font-size: 14px;
+    color: #666;
+    width:auto;
+}
+
+.tabs button.active{
+    border-bottom: 3px solid #000;
+    color:#000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content label{
+    font-size: 11px;
+}
