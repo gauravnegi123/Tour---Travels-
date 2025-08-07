@@ -970,8 +970,9 @@ padding: 110px 30%;
 }
 
 .popup-content {
+    user-select: none;
     background: #fff;
-    width: 350px;
+    width: 375px;
     border-radius: 8px;
     padding: 25px;
 
@@ -1013,12 +1014,64 @@ padding: 110px 30%;
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 .popup-content label{
-    font-size: 11px;
+    font-size: 10px;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+    max-width:350px;
+}
+
+.passowrd-container input{
+    width: 100%;
+    padding: 5px 40px 5px 40px;
+    font-size: 14px;
+
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.toggle-password:active{
+    font-size:16px;
+}
+
+button.continue{
+    width: 100%;
+    border: none;
+    background-color: #ffd700;
+    color: black;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+button.continue:hover {
+    background-color: #ffeb3b;
+    transition: background-color 0.3s ease;
+}
+
+button.continue:active {
+  background-color:#d6b738; 
+  transform: scale(0.98);   
+}
+
+.divider {
+    text-align: center;
+    
 }
