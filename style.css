@@ -1014,11 +1014,11 @@ padding: 110px 30%;
 
 input {
     width: 100%;
-    padding: 5px;
+    padding: 8px;
     margin-bottom: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .popup-content label{
