@@ -1126,4 +1126,7 @@ button.continue:active {
 .forgot-password:hover {
     text-decoration: underline;
     cursor: pointer;
+}.forgot-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
