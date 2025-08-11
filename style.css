@@ -970,7 +970,7 @@ padding: 110px 30%;
     align-items: center;
 }
 
-.popup-content {
+.popupcontent {
     user-select: none;
     background: #fff;
     width: 375px;
