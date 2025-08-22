@@ -30,7 +30,7 @@ html{
 
 .banner{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -41,7 +41,7 @@ html{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     pointer-events: none;;
 }
@@ -58,8 +58,9 @@ html{
 nav{
     position: fixed;
     width: 100%;
-    height: 10vh;
+    height: clamp(2.8rem, 5vw, 3.8rem);
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(21, 74, 74);
@@ -67,9 +68,8 @@ nav{
 }
 
 nav .logo{
-    width: 60px;
-    height:8vh;
-    margin:2vh;
+    width: clamp(2.5rem, 6vw, 3.8rem);
+    height:auto;
     margin-left: 2%;
     user-select: none;
 }
@@ -77,31 +77,27 @@ nav .logo{
 
 nav ul li{
     list-style: none;
-    margin-left: 40px;
+    margin-left: clamp(0.4rem, 2vw, 2rem);
     display: inline-block;
     display: flex;
 }
 
 .navbar{
     display: flex;
-    margin-right: 4vh;
+    flex-wrap: nowrap;
+    margin-right:  clamp(0.4rem, 2vw, 2rem);
 }
 
 .navbar a{
     display: flex;
-    color: white;
-    font-size: 19px;
+    flex-wrap: nowrap;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     font-weight: 550;
-    padding: 5px 10px;
+    padding: 0.3em 0.6em;
+    transition: all 0.4s ease;
     text-decoration: none;
-    transition: ease 0,40s;
+    color: rgb(255, 255, 255);
 }
-
-
-.navbar  a {
-  transition: all 0.4s ease;
-}
-
 
 .navbar  a:hover{
     background: white;
@@ -115,38 +111,31 @@ nav ul li{
   color: black;
 }
 
-nav  ul  li  a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 19px;
-    ;
-}
-
 .title{
     text-decoration: none;
-    font-size: 4vh;
     color: rgb(255, 255, 255);
-    padding:14px 17px;
-    margin-top: 34vh;
+    margin-top:15%;
     text-align: center;
     vertical-align: center;
 }
 .icon-1{
     
-    margin-left: 6px;
-    font-size:17px ;
+    margin-left: 0.37rem;
+    font-size: clamp(0.7rem, 2, 1.1rem);
 }
 .title  h1 {
 font-size: 10vh;
 font-weight: 750;
-text-shadow: 2px black;
+text-shadow: 2px 2px black;
 transition: ease 0.3s;
 user-select: none;
 }
 
 .title  h1:hover {
+   
     color:transparent;
     -webkit-text-stroke: 2px white;
+    text-shadow:none;
 }
 
 .title  p {
@@ -156,9 +145,9 @@ user-select: none;
 
 .button {
     margin-top: 5vh;
-    font-size: 30px;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     display: inline-block;
-    padding: 10px 30px;
+    padding: 0.62rem 1.87rem;
     color: rgb(21, 74, 74);
     background-color: white;
     border-radius: 15px;
@@ -173,6 +162,65 @@ user-select: none;
     box-shadow: 5px 10px 30px rgba( 0, 0, 0, 0.4);
 }
 
+
+
+
+/*Service Section*/
+
+
+
+
+.services{
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    padding: 3.12rem 0rem;
+}
+
+.services  h1 {
+    text-align: center;
+    margin-bottom:clamp(2rem, 4vw, 3.12rem);
+    font-size: clamp(1.4rem, 5vw, 2.2rem);
+    font-weight: 700;
+}
+.services-container {
+    padding-left: clamp(0.1rem, 5%, 10%);
+    padding-right: clamp(0.1rem, 5%, 10%);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.service1{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service1 img{
+    width: clamp(7rem, 18vw, 20rem);
+    height: clamp(6rem, 12vw, 13rem); 
+    padding-left: clamp(0.1rem, 1vw, 0.62rem);
+    padding-bottom: clamp(0.1rem, 1vw, 0.62rem);
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.62rem;
+}
+.service1 p{
+    font-family:'Times New Roman', Times, serif;
+    padding: clamp(0.1rem, 1vw, 0.62rem);
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    width: clamp(7rem, 25vw, 18.75rem);
+    text-align:justify;
+    
+}
+
+.service1 h3{
+    padding-left: clamp(0.1rem, 1vw, 0.62rem);
+   font-size: clamp(0.8rem, 2vw, 1.35rem);
+}
 
 
 /*LOCATIONS*/
@@ -313,57 +361,6 @@ width:100%;
     transform: scale(1.03);
 }
 
-/* Locations */
-
-.location-content{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.col-content{
-    position: relative;
-    filter:brightness(95%);
-    transition: all 0.3s cubic-bezier(0.445,0.05,0.55,0.95);
-
-}
-
-.col-content img{
-    margin-bottom: 40px;
-    height: 500px;
-    border-radius: 27px;
-    width: 100%;
-    
-}
-
-.col-content h5{
-    position: absolute;
-    font-size: 25px;
-    color: white;
-    font-weight: 500;
-    left: 20px;
-    bottom: 105px;
-    cursor: pointer;
-}
-
-.col-content p{
-    position: absolute;
-    font-size: 20px;
-    color: white;
-    left: 20px;
-    bottom: 80px;
-    cursor: pointer;
-}
-
-.col-content:hover{
-    filter: brightness(120%);
-    transform: scale(1.03);
-    cursor: pointer;
-}
-
-
-
-
 
 
 /*SERVICES*/
@@ -428,6 +425,7 @@ width:100%;
     transition:0.5s ease;
 
 }
+
 
 
 
@@ -667,38 +665,36 @@ padding: 110px 30%;
 }
 .bookcab{
     
-    display: flex;
+    display:flex;
     width: 100%;
-    height: 500px;
-    margin-bottom: 20px;
+    height: clamp(18rem, 33vw, 32rem);
+    margin-bottom: clamp(1rem, 3vh, 2rem);
    
 
 }
 
-
-
 .img-sec{
-    display: flex;
-    padding-top: 80px;
-    width: 95%;
+    width: 60%;
+    margin-right:clamp(2%, 5%, 5%);
+    padding-top:clamp(3rem, 5vw, 5rem);
 
 
 }
 
 .img-sec img{
-    height: auto;
-    width: 92%;
+    width:100%;
+    height:100%;
+    
 }
 
 
 
 .bookcab-content {
-    padding-top: 9%;
-    padding-left: 4%;
-    padding-right:6%;
-    height: 100%;
-    min-height: 100vh;
-    width: 50%;
+    width: 40%;
+    padding-right: clamp(0.1rem, 3%, 4rem);
+    padding-top: clamp(5rem, 10vw, 8rem); 
+    padding-left: clamp(0.1rem, 2vw, 8rem);
+    min-height: clamp(10rem, 40vh, 30rem);
     justify-content: center;
    
 }
@@ -707,8 +703,10 @@ padding: 110px 30%;
 
 
 .bookcab-content  h1{
+    justify-content: center;
+    user-select: none;
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(1rem, 2.8vw, 3rem);
     color: black;
 }
 
@@ -717,36 +715,36 @@ padding: 110px 30%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 25px;
-    margin-bottom: 8px;
-
+    margin: clamp(0.1rem, 1vw, 1.6rem);
+    
 }
 
 
 .bookcab-content  form input{
     width: 100%;
-    padding: 17px;
+    min-width: fit-content;
+    padding:clamp(0.4rem, 2vw, 1.1rem);
     border: none;
     outline: none;
     background-color:#dddddd;
-    font-size: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    font-size: clamp(0.6rem, 1vw, 1rem);
+    margin-bottom:clamp(0.4rem, 1vw, 0.7rem);
+    border-radius:clamp(6px, 1vw,12px);
 }
 
 
 .bookcab-content  form button{
     color: white;
     background-color: black;
-    font-size: 18px;
-    font-weight: 600px;
-    border: 6px solid transparent;
+    font-size:clamp(0.8rem, 3vw, 1.2rem);
+    font-weight: 600;
+    border: 0.4rem solid transparent;
     border-radius: 40px;
-    width: 140px;
+    width:clamp(5rem, 10vw, 10rem);
     cursor: pointer;
     user-select: none;
     text-align: center;
-    margin-top:10px ;
+    margin-top:clamp(0.4rem, 1vw, 0.8rem);
     
 }
 
@@ -758,7 +756,11 @@ padding: 110px 30%;
 
 
 
+
 /* Ride Section */
+
+
+
 
 .ride {
     width: 100%;
@@ -777,7 +779,6 @@ padding: 110px 30%;
 }
 .ride p {
     margin:10px;
-    
 }
 
 
@@ -790,8 +791,8 @@ padding: 110px 30%;
 
 .ride-option {
     background-color: #f4f3f6;
-    width:400px;
-    height: 140px;
+    width: clamp(15rem, 50vw, 25rem);
+    height: clamp(6rem, 20vh, 8.75rem);
     display: flex;
     justify-content:space-evenly;
     margin: 15px;
@@ -825,6 +826,10 @@ padding: 110px 30%;
 
 .ride-option:hover {
     transform: scale(1.06);
+}
+
+.ride-option-a p{
+    color:rgba(0, 0, 0, 0.7);
 }
 
 
@@ -919,9 +924,9 @@ padding: 110px 30%;
 }
 
 .main img{
-    margin-top:30%;
-    height: 350px;
-    width: 350px;
+    margin-top: 1%;
+    height: 110%;
+    width: 110%;
 }
 
 .abt-text{
@@ -972,8 +977,8 @@ padding: 110px 30%;
 
 .popupcontent {
     user-select: none;
+    width: 370px;
     background: #fff;
-    width: 375px;
     border-radius: 8px;
     padding: 25px;
 
@@ -983,18 +988,18 @@ padding: 110px 30%;
     position:absolute;
     cursor: pointer;
     top: 10px;
-    right: 15px;
+    right: 20px;
     left:95%;
-    font-size: 25px;    
-
+    font-size: 26px;    
 }
-
+.close.active{
+    color: red;
+}
 .tabs{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
-   
 }
 
 .tabs button{
@@ -1021,6 +1026,9 @@ input {
     border-radius: 5px;
     font-size: 12px;
 }
+input:focus {
+    outline: solid .5px;
+}
 
 .popup-content label{
     font-size: 10px;
@@ -1038,7 +1046,7 @@ input {
 
 }
 
-.toggle-password {
+#toggle-password {
   position: absolute;
   right: 10px;
   top: 30%;
@@ -1048,8 +1056,10 @@ input {
   user-select: none;
 }
 
-.toggle-password:active{
+#toggle-password:active{
     font-size:16px;
+    color:red;
+    background-color: none;
 }
 
 button.continue{
