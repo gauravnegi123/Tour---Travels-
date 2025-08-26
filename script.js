@@ -1,17 +1,6 @@
-const signin = document.getElementById("signin");
-const close = document.getElementById("close");
-const loginpopup = document.getElementById("loginpopup");
 
 
-
-
-
-
-signin.addEventListener("click", () => {
-    loginpopup.style.display = 'flex';
-});
-
-close.addEventListener("click", () => {
-    loginpopup.style.display = 'none';
-});
-
+document.getElementById("toggle-password").onclick = () => {
+    const input = document.getElementById("password");
+    input.type = input.type === "password" ? "text" : "password";
+};
