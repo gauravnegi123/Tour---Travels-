@@ -9,6 +9,8 @@
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDv4x3Gi4drU8G1zzK8JO5FlZPWLVpWeU&libraries=places&callback=initAutocomplete" async defer &callback=initAutocomplete
 ></script>
  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -30,12 +32,12 @@
             
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">Book Cab</a></li>
+                <li><a href="bookcab.html">Book Cab</a></li>
                  <li><a href="contact.html">Contact Us</a></li>
+                 <li><a href="signin.html" >Sign in<div class="icon-1"><i class="fa-solid fa-user"></i></div></a></li>
         
             </ul>
         </nav>
-    
     </div>
 
 
@@ -51,7 +53,7 @@
                 <form id="cab-form" action="">
                     <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
                     <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
-                    <input type="datetime-local" placeholder="Enter Date and Time">
+                    <input type="datetime-local" placeholder="Enter Date and Time" required>
                     <button type="submit" class="btn">See Price</button>
                 </form>
                 <h3 id="price"></h3>
@@ -131,7 +133,7 @@
                                     </div>
                             </div>
                             </a>
-                            <a href="#intercity" target="_blank">
+                            <a href="#intercity" target="blank">
                              <div class="ride-option">
                                 <div class="ride-option-a">
                                 <h2>Intercity</h2>
@@ -183,7 +185,7 @@
             </div>
 
             <div class="end">
-        <p>Copyright © 2025 Tour And Travels All Rights Reserved.<br>Website developed by: Gaurav Negi</p>
+        <p>Copyright © 2025 Tour And Travels All Rights Reserved.</p>
     </div>
 </section>
 <a href="#top" class="back-to-top">Back to Top ↑</a>
