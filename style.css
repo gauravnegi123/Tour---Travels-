@@ -262,21 +262,21 @@ width:100%;
 
 
 .col-content  h5 {
-    font-size: 25px;
+     font-size: clamp(1.2rem, 2vw, 1.6rem); 
     color:white;
     font-weight: 500;
-    left: 20px;
-    bottom: 105px;
+    left: 1.25rem;
+    bottom: clamp(5rem, 8vw, 6.6rem); 
     position: absolute;
     cursor: pointer;
 }
 
 .col-content  p{
     position: absolute;
-    font-size:20px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     color: white;
-    left: 20px;
-    bottom: 80px;
+    left: 1.25rem;
+    bottom: clamp(4rem, 6vw, 5rem);
     cursor: pointer;
 
 }
@@ -298,10 +298,10 @@ width:100%;
 }
 
 .package-title h2{
-    font-size: 40px;
+   font-size: clamp(2rem, 3vw, 2.5rem);
     font-weight: 650;
-    padding-top: 75px;
-    padding-bottom: 10px;
+    padding-top: clamp(1.5rem, 6vw, 4.7rem); 
+    padding-bottom: clamp(0.5rem, 1vw, 0.7rem);
     line-height: 2;
 }
 
@@ -320,18 +320,18 @@ width:100%;
 
 .image img{
     width: 100%;
-    height: 500px;
+    height: clamp(16rem, 31vw, 31rem);
     border-radius: 30px;
 }
 
 .image h3{
     color: white;
     position: absolute;
-    font-size: 30px;
+    font-size: clamp(1rem, 2.5vw, 1.9rem);
     font-weight: 600;
     text-align: center;
-    top: 10px;
-    right: 20px;
+    top: clamp(0.4rem, 1vw, 0.7rem);    
+    right: clamp(1rem, 2vw, 1.25rem);
 }
 
 .dest-content{
@@ -339,21 +339,22 @@ width:100%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
-    margin-bottom: 50px;
+    padding-top: clamp(0.5rem, 2vw, 1rem); 
+    margin-bottom: clamp(2rem, 6vw, 3.1rem);
 }
 
 .location h4{
-    font-size: 25px;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
     letter-spacing: 1px;
     font-weight: 600;
-    margin-bottom: 2px;
+    margin-bottom: 0.12rem;
+    margin-left: 0.3rem;
 }
 
 .pac-details li{
-    font-size: 19px;
+    font-size: clamp(0.70rem, 1.5vw, 1.2rem);
     color: #4c4c4c;
-    margin-left: 15px;
+    margin-left: 1.2rem;
     margin-bottom: 2px;
     list-style-type: disc;
 }
