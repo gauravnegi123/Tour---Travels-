@@ -1051,7 +1051,7 @@ input:focus {
 
 }
 
-#toggle-password {
+.toggle-password {
   position: absolute;
   right: 10px;
   top: 30%;
