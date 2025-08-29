@@ -671,37 +671,35 @@ padding: 110px 30%;
 .bookcab{
     
     display:flex;
-    width: 100%;
-    height: clamp(18rem, 33vw, 32rem);
+    justify-content: center;
+    height: clamp(20rem, 33vw, 32rem);
     margin-bottom: clamp(1rem, 3vh, 2rem);
    
 
 }
 
+.bookcab-content {
+    width: clamp(15rem, 40vw, 50rem);
+    margin-right: clamp(0rem, 1%, 4rem);
+    padding-top: clamp(4.5rem, 10vw, 8.5rem); 
+    margin-left: clamp(0.1rem, 3vw, 5rem);
+    justify-content: center;
+   
+}
+
 .img-sec{
-    width: 60%;
-    margin-right:clamp(2%, 5%, 5%);
+    margin-right:clamp(2%, 4%, 4%);
+    margin-left: clamp(0.1%, 2%, 5%);
     padding-top:clamp(3rem, 5vw, 5rem);
 
 
 }
 
 .img-sec img{
-    width:100%;
-    height:100%;
-    
-}
-
-
-
-.bookcab-content {
-    width: 40%;
-    padding-right: clamp(0.1rem, 3%, 4rem);
-    padding-top: clamp(5rem, 10vw, 8rem); 
-    padding-left: clamp(0.1rem, 2vw, 8rem);
-    min-height: clamp(10rem, 40vh, 30rem);
-    justify-content: center;
-   
+    width: clamp(13.5rem, 55vw, 70rem);
+    height: clamp(12.5rem, 28vw, 30rem); 
+    object-fit: cover;
+    border-radius: 2px;
 }
 
 
@@ -711,11 +709,12 @@ padding: 110px 30%;
     justify-content: center;
     user-select: none;
     text-align: center;
-    font-size: clamp(1rem, 2.8vw, 3rem);
+    font-size: clamp(1.1rem, 2.8vw, 3rem);
     color: black;
 }
 
 .bookcab-content  form {
+    max-width: clamp(10rem, 30vw, 30rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -728,7 +727,7 @@ padding: 110px 30%;
 .bookcab-content  form input{
     width: 100%;
     min-width: fit-content;
-    padding:clamp(0.4rem, 2vw, 1.1rem);
+    padding:clamp(0.2rem, 1.8vw, 1.1rem);
     border: none;
     outline: none;
     background-color:#dddddd;
@@ -741,7 +740,7 @@ padding: 110px 30%;
 .bookcab-content  form button{
     color: white;
     background-color: black;
-    font-size:clamp(0.8rem, 3vw, 1.2rem);
+    font-size:clamp(0.6rem, 2vw, 1.2rem);
     font-weight: 600;
     border: 0.4rem solid transparent;
     border-radius: 40px;
