@@ -672,8 +672,8 @@ padding: 110px 30%;
     
     display:flex;
     justify-content: center;
-    height: clamp(20rem, 33vw, 32rem);
-    margin-bottom: clamp(1rem, 3vh, 2rem);
+    height: clamp(16rem, 33vw, 32rem);
+    margin-bottom: clamp(1rem, 3vw, 4rem);
    
 
 }
@@ -768,35 +768,39 @@ padding: 110px 30%;
 
 .ride {
     width: 100%;
-    
+    padding:clamp(0.6rem, 1vw, 0.8rem); ;
 }
 
 .ride h1 {
     color: black;
-    font-size: 35px;
-    margin-left: 6%;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-left: clamp(1rem, 5vw, 5rem);
 }
 
 .ride h2 {
-    margin-top: 10px;
-    margin-left: 10px;
+    font-size:  clamp(1.2rem, 2vw, 1.5rem);
+    margin-top: clamp(0.4rem, 1vw, 0.6rem);
+    margin-left: clamp(0.5rem, 1vw, 0.8rem);
 }
 .ride p {
-    margin:10px;
+    font-size: clamp(0.8rem, 1.1vw, 1rem);
+    margin: 0.5rem;
+    margin-left:clamp(0.6rem, 1vw, 0.8rem);
+   
 }
 
 
 .ride-content {
     display: flex;
-    margin: 1.5%;
+    margin: clamp(0.3rem, 1vw, 1.5rem);
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .ride-option {
     background-color: #f4f3f6;
-    width: clamp(15rem, 50vw, 25rem);
-    height: clamp(6rem, 20vh, 8.75rem);
+    width: clamp(20rem, 30vw, 25rem);
+    height: clamp(7rem, 20vw, 8.75rem);
     display: flex;
     justify-content:space-evenly;
     margin: 15px;
@@ -807,7 +811,6 @@ padding: 110px 30%;
 }
 .ride-option-a{
     width: 60%;
-    margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -819,8 +822,8 @@ padding: 110px 30%;
     justify-content: center;
 }
 .ride-option-b img {
-    width: 70px;
-    height: 70px;
+   width: clamp(3rem, 6vw, 4.5rem); 
+    height: clamp(3rem, 6vw, 4.5rem);
 }
 
 .ride-content  a{
