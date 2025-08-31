@@ -925,28 +925,29 @@ padding: 110px 30%;
 .about{
     background-color: #191919;
     width: 100%;
-    padding: 78px 0px;
+    padding: clamp(3rem, 5vw, 4.875rem) 0rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .main img{
-    margin-top: 1%;
-    height: 110%;
-    width: 110%;
+    margin-top: clamp(0.3rem, 1vw, 0.6rem);
+    width: clamp(20rem, 30vw, 30rem);
+    height: clamp(12rem, 31vw, 30rem);
 }
 
 .abt-text{
-    width: 500px;
+   width: clamp(20rem, 40vw, 31.25rem);
     margin-top: 2%;
     user-select: none;
 
 }
 
 .abt-text h1{
-    font-size: 70px;
+    font-size: clamp(3rem, 5vw, 4.375rem);
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: clamp(0.75rem, 1vw, 1.25rem);
     letter-spacing: 1px;
 }
 
@@ -957,9 +958,9 @@ padding: 110px 30%;
 
 .abt-text p{
     color: white;
-    font-size: 20px;
-    margin-bottom: 45px;
-    line-height: 30px;
+    font-size: clamp(1.1rem, 2vw, 1.25rem);
+    margin-bottom: clamp(1.5rem, 5vw, 2.8125rem);
+    line-height: clamp(1.4rem, 3vw, 1.875rem);
     letter-spacing: 1px;
 }
 
