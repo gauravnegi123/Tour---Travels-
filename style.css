@@ -564,7 +564,7 @@ padding: 110px 30%;
       color: green;
       margin-top: 10px;
     }
-    #submitted:target {
+#submitted:target {
       display: block;
       animation: fadeout 3s forwards;
     }
@@ -602,15 +602,24 @@ padding: 110px 30%;
 }
 
 .contact{
-    padding: 110px 30%;
+    padding: 4rem 0rem;
+    height:100%;
+}
+
+.contact-form{
+    width: 100%;
     height: 100%;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-form h1{
-    font-size: 80px;
+    font-size: clamp(2.5rem, 6vw, 5rem);
     color: white;
-    margin-bottom: 20px;
+    user-select: none;
+    margin-bottom: clamp(0.7rem, 1vw, 1rem);
 }
 
 .contact-form h1 span{
@@ -618,34 +627,47 @@ padding: 110px 30%;
 }
 
 .contact-form p{
+    flex-wrap:wrap;
+    user-select: none;
+    padding: clamp(0.5rem, 1vw, 1rem);
+    max-width:clamp(20rem, 42vw, 40rem);
     color: white;
-    line-height: 30px;
-    letter-spacing: 1px;
-    font-size: 23px;
-    margin-bottom: 20px;
+    line-height:clamp(1.2rem, 2vw, 2rem);
+    font-size:clamp(0.9rem, 2vw, 1.4rem);
 }
 
 
-.contact-form form input,form textarea{
+.contact-form form  {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 17px;
-    border: none;
+    max-width:clamp(20rem, 42vw, 40rem);
+    padding: clamp(0.5rem, 1vw, 1rem);
     outline: none;
-    background-color: #191919;
-    font-size: 20px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
     border-radius: 10px;
+}
+
+.contact-form form input{
+    font-size: clamp(0.7rem, 2vw, 1rem);
+}
+
+.contact-form form textarea{
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    resize:vertical;
+    max-width:clamp(20rem, 42vw, 40rem);
+    margin-bottom: clamp(0.5rem, 1vw, 1rem);
 }
 
 .contact-form form .submit-btn{
     display: inline-block;
     background-color: #fc0050;
-    font-size: 27px;
-    font-weight: 600px;
+    font-size: clamp(0.7rem, 2vw, 1.2rem);
+    font-weight: 600;
     border: 2px solid transparent;
     border-radius: 40px;
-    width: 220px;
+    width: clamp(7rem, 15vw, 15rem);
     cursor: pointer;
     transition: ease 0.30s;
 
@@ -653,6 +675,7 @@ padding: 110px 30%;
 
 .contact-form form .submit-btn:hover{
     border: 2px solid #fc0050;
+    color:white;
     background-color: transparent;
     transform: scale(1.1);
 
